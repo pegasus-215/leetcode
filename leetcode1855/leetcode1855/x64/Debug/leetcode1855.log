@@ -1,0 +1,5 @@
+﻿  leetcode1855.c
+C:\Users\Miste\Documents\MyCode\C\leetcode1855\leetcode1855\leetcode1855.c(50,27): warning C4047: '==': 'FILE *' differs in levels of indirection from 'int'
+C:\Users\Miste\Documents\MyCode\C\leetcode1855\leetcode1855\leetcode1855.c(50,27): warning C4047: 'function': 'FILE *' differs in levels of indirection from 'int'
+C:\Users\Miste\Documents\MyCode\C\leetcode1855\leetcode1855\leetcode1855.c(50,27): warning C4024: 'getc': different types for formal and actual parameter 1
+  leetcode1855.vcxproj -> C:\Users\Miste\Documents\MyCode\C\leetcode1855\x64\Debug\leetcode1855.exe
