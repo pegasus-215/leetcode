@@ -1,0 +1,10 @@
+﻿  leetcode3240.c
+  my_fun.c
+  Running Code Analysis for C/C++...
+C:\Users\Miste\Documents\MyCode\C\leetcode\leetcode3240\leetcode3240\my_fun.c(65,13): error C2374: 'num_of_ones': redefinition; multiple initialization
+C:\Users\Miste\Documents\MyCode\C\leetcode\leetcode3240\leetcode3240\my_fun.c(65,30): error C2374: 'count': redefinition; multiple initialization
+C:\Users\Miste\Documents\MyCode\C\leetcode\leetcode3240\leetcode3240\my_fun.c(65,41): error C2374: 'num_of_10_couples': redefinition; multiple initialization
+C:\Users\Miste\Documents\MyCode\C\leetcode\leetcode3240\leetcode3240\my_fun.c(123,13): error C2374: 'num_of_ones': redefinition; multiple initialization
+C:\Users\Miste\Documents\MyCode\C\leetcode\leetcode3240\leetcode3240\my_fun.c(123,30): error C2374: 'count': redefinition; multiple initialization
+C:\Users\Miste\Documents\MyCode\C\leetcode\leetcode3240\leetcode3240\my_fun.c(123,41): error C2374: 'num_of_10_couples': redefinition; multiple initialization
+  Generating Code...

@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.40.33811.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/miste/documents/mycode/c/leetcode/leetcode3240/leetcode3240/leetcode3240.c"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "0dcf3527b000494da4411f421a305cb262da21b14a41ab35505df1ccb48385ed"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/miste/documents/mycode/c/leetcode/leetcode3240/leetcode3240/my_fun.h"
+          },
+          "hashes": {
+            "sha-256": "bbf14f03335a8956896123e85c8e5975c1d05770ba9a2a122fcbfdc8a8d8ac7b"
+          }
+        }
+      ]
+    }
+  ]
+}
