@@ -1,0 +1,92 @@
+#include <stdio.h>
+
+void my_bubble_sort(int* data, int data_len)
+{
+	int swap;
+	for (int i = 0; i < data_len; i++)
+	{
+		for (int j = 0; j < data_len - 1; j++)
+		{
+			if (data[j] > data[j + 1])
+			{
+				swap = data[j];
+				data[j] = data[j + 1];
+				data[j + 1] = swap;
+			}
+		}
+	}
+}
+
+
+int minimumCost(int m, int n, int* horizontalCut, int horizontalCutSize, int* verticalCut, int verticalCutSize) {
+	my_bubble_sort(horizontalCut, horizontalCutSize);
+	my_bubble_sort(verticalCut, verticalCutSize);
+
+	printf("horizontalCutSize:%d\n", horizontalCutSize);
+	printf("verticalCutSize:%d\n", verticalCutSize);
+
+	int i = 0, j = 0, sum = 0;
+
+	while (1)
+	{
+		if(i < horizontalCutSize && j < verticalCutSize)
+		{ 
+			if (horizontalCut[i] > verticalCut[j])
+			{
+				sum += horizontalCut[i];
+
+				for (int index = j; j < verticalCutSize; index++)
+				{
+					sum += verticalCut[j];
+				}
+
+				i++;
+			}
+			else
+			{
+				sum += verticalCut[j];
+
+				for (int index = i; i < horizontalCutSize; index++)
+				{
+					sum += horizontalCut[j];
+				}
+
+				j++;
+			}
+		}
+		else if (i == horizontalCutSize && j < verticalCutSize)
+		{
+			for (int index = j; j < verticalCutSize; j++)
+			{
+				sum += verticalCut[j];
+			}
+			break;
+		}
+		else if (i < horizontalCutSize && j == verticalCutSize)
+		{
+			for (int index = i; i < horizontalCutSize; i++)
+			{
+				sum += verticalCut[j];
+			}
+			break;
+		}
+	}
+
+	return sum;
+}
+
+
+#define m 3
+#define n 2
+
+void main()
+{
+	int h[m - 1] = {1, 3};
+	int v[n - 1] = { 5 };
+
+	int sum;
+
+	sum = minimumCost(m, n, h, m - 1, v, n - 1);
+	printf("sum:%d\n", sum);
+
+}
